@@ -1,14 +1,15 @@
-import { useState, useEffect } from "react";
-import About from "../components/About";
-import Header from "../components/Header";
-import Menu from "../components/Menu";
-import Top from "../components/Top";
+import { useState, useEffect } from 'react';
+import About from '../components/About';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
+import Top from '../components/Top';
 
 export default function Home() {
   const [showMenu, toggleShowMenu] = useState(false);
+
   return (
     <div
-      className={showMenu ? "out-wrap" : null}
+      className={showMenu ? 'out-wrap' : null}
       onClick={showMenu ? () => toggleShowMenu(false) : null}
     >
       <div className="mobile-nav"></div>

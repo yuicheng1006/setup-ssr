@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
-import Head from "next/head";
-import Layout from "../components/Layout";
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
+import Layout from '../components/Layout';
 // import About from '../components/About'
 // import Header from '../components/Header'
-import MainContent from "../components/MainContent";
+import MainContent from '../components/MainContent';
+import axios from 'axios';
 // import Menu from '../components/menu'
 
 export default function Home() {

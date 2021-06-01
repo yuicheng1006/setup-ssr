@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from "react";
-import { collection } from "../data/collection.js";
-import AOS from "aos";
+import { useState, useEffect, useRef } from 'react';
+import { collection } from '../data/collection.js';
+import axios from 'axios';
+import AOS from 'aos';
 
 const MainContent = ({ category }) => {
   // console.log('category',category);
@@ -9,7 +10,7 @@ const MainContent = ({ category }) => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: "linear",
+      easing: 'linear',
       delay: 200,
     });
   }, []);
@@ -25,7 +26,6 @@ const MainContent = ({ category }) => {
       setWorks(newWorks);
     }
   }, []);
-  // console.log('newworkssssss',works);
 
   return (
     <div id="Main-wrap">
